@@ -49,7 +49,10 @@ $(document).ready(function () {
 		autoplayHoverPause: true,
 		responsive: {
 			768: {
-				margin: 50,
+				margin: 0,
+				nav: true,
+				navText: [null, 'Next'],
+				dots: false,
 			},
 			992: {
 				margin: 0,

@@ -259,7 +259,7 @@ section .title::after {
 /* Section ABOUT */
 #about {
   background: linear-gradient(to bottom, #ececec, #d3d3d3, #FFFFFF) !important;
-  height: 800px;
+  min-height: 800px;
 }
 
 #about .b-rounded-right {
@@ -515,12 +515,67 @@ footer .q-links li {
 /* MEDIA QUERY */
 @media screen and (max-width: 960px) {
 
+  section .title h2 {
+    font-size: 30px !important;
+  }
+
+  #hero div div p, #hero div div button{
+    margin: 1rem auto !important;
+  }
+
+  #bestSellers .owl-carousel .item .info h3{
+    text-align: center!important ;
+  }
+
+  #bestSellers .owl-carousel .item .info p {
+    text-align: justify;
+  }
+
+
   #bestSellers .owl-carousel .item .info, #bestSellers .owl-carousel .item .card {
     margin: auto;
   }
 
-  #bestSellers .owl-carousel .owl-dots .owl-dot {
-    margin-right: 5px;
+  #bestSellers .owl-carousel .owl-dots {
+    padding-left: 0;
+    margin: 0 !important;
+  }
+/* 
+  #partners div {
+    height: 500px !important;
+  } */
+
+  #carousel-ourServices .owl-stage-outer {
+    width: 90% !important;
+  }
+
+  #testimonial .owl-stage-outer {
+    width: 95vw !important;
+    margin: auto;
+  }
+
+  #testimonial .item {
+    margin: 7rem auto auto 0;
+    height: auto !important;
+  }
+
+  #testimonial img {
+    width: 150px;
+    height: 150px;
+    left: .5rem;
+  }
+
+  #testimonial .text-review {
+    width: 70% !important;
+    margin-left: 7rem;
+  }
+
+  #testimonial span {
+    left: 200px;
+  }
+
+  .owl-carousel .owl-dots .owl-dot {
+    margin: 1rem;
   }
 
   .text-about {
