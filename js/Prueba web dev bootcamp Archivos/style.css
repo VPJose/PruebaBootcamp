@@ -1,0 +1,191 @@
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.bar-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.bar-menu a {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin-bottom: 3px;
+}
+
+section {
+    height: 75vh;
+}
+
+section .title h2 {
+    border-radius: 0px 50px 50px 0px !important;
+}
+
+section:nth-child(odd) .title h2 {
+  border-radius: 50px 0px 0px 50px !important;
+}
+
+#hero {
+    background: url('../assets/IMAGENES/HERO.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+  .button {
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    color: #ffffff;
+  }
+  .button .links a {
+    padding: 15px;
+    transition: 700ms cubic-bezier(0.89, 0.03, 0.06, 1.5);
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+  }
+  .button .links a:hover {
+    color: #D6A0D3;
+    transition-timing-function: ease-in-out !important;
+    transition-delay: 1ms !important;
+  }
+  .button .links a:nth-child(5) {
+    transition-delay: 55ms;
+  }
+  .button .links a:nth-child(4) {
+    transition-delay: 110ms;
+  }
+  .button .links a:nth-child(3) {
+    transition-delay: 165ms;
+  }
+  .button .links a:nth-child(2) {
+    transition-delay: 220ms;
+  }
+  .button .links a:nth-child(1) {
+    transition-delay: 275ms;
+  }
+  .button .overlay {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    transition: 1s cubic-bezier(0.89, 0.03, 0.06, 1.5);
+  }
+  .button .overlay a {
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    opacity: 1;
+    padding: 0;
+    margin: auto;
+    color: #ffffff !important;
+    font-size: 20px;
+  }
+  
+  .button:hover .links a {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .button:hover .overlay {
+    transform: translateX(-500px);
+  }
+  
+  @-webkit-keyframes beat {
+    to {
+      transform: scale(1.4);
+    }
+  }
+  
+  @keyframes beat {
+    to {
+      transform: scale(1.4);
+    }
+  }
+
+/*SECTION BETS SELLERS*/
+#bestSellers .title::after {
+  content:'';
+  display: block;
+  border-bottom: 5px solid #007bff;
+  width: 75%;
+}
+
+#bestSellers .owl-container {
+  padding: 2rem 0;
+}
+
+#bestSellers .card {
+  width: 250px;
+  height: 250px;
+}
+
+/* Menu Lateral */
+#menu {
+  position: fixed;
+  width: 275px;
+  height: calc(100% + 60px);
+  background:#fff;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  padding: 3em 2em;
+  transform: translate(20rem);
+  transition: .5s ease-in-out;
+}
+#menu.visible {
+  transform: translate(0);
+}
+
+#menu ul {
+  list-style: none;
+  text-align: start;
+  padding: 0;
+}
+
+#menu ul li {
+  margin:.7rem 0; 
+}
+
+#menu ul li::after {
+  content:'';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  opacity:.8;
+}
+
+#menu ul li a {
+  color: black!important;
+  font-size: 1.2rem;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 3rem;
+}
+
+#menu i {
+  margin-right: 1rem;
+  color: #000000 !important;
+}
+
+#menu .close {
+  cursor: pointer;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+}
